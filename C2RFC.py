@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score,confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-C2Data=pd.read_excel(io='Data\Classifier2Data.xlsx',sheetname='Soyabean')
+C2Data=pd.read_excel(io='Data\Classifier2Data.xlsx',sheet_name='Soyabean')
 C2Data.drop(['District','Year','Season','Crop','Area','Production','Productivity'],axis=1,inplace=True)
 train=C2Data.ix[:78]
 test=C2Data.ix[78:]

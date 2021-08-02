@@ -21,8 +21,8 @@ def labelassignment(cropname):
 	dc['CropLabel']=sdc
 	return dc
 
-def writing(dc,writer,sheetname):
-	dc.to_excel(writer,sheetname)
+def writing(dc,writer,sheet_name):
+	dc.to_excel(writer,sheet_name)
 
 dcbajra=labelassignment('Bajra')
 dcjowar=labelassignment('Jowar')

@@ -3,11 +3,11 @@ from datacrops import *
 import numpy as np
 import pandas as pd
 
-def writing(dc,writer,sheetname):
-	dc.to_excel(writer,sheetname)
+def writing(dc,writer,sheet_name):
+	dc.to_excel(writer,sheet_name)
 
 def TRImport(cropname):
-	Crop=pd.read_excel(io="Data\CropLabels.xlsx",sheetname=cropname)
+	Crop=pd.read_excel(io="Data\CropLabels.xlsx",sheet_name=cropname)
 	k=[]
 	t=[]
 	for i in Crop.index:

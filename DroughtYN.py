@@ -39,10 +39,10 @@ def structuring(district,years):
 			districtdroughtyn[k]=i
 	return districtdroughtyn
 
-def writing(districtdroughtyn,writer,sheetname):
+def writing(districtdroughtyn,writer,sheet_name):
 	months=['2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016']
 	districtdroughtyn=pd.DataFrame(np.transpose(districtdroughtyn),columns=months)
-	districtdroughtyn.to_excel(writer,sheetname)
+	districtdroughtyn.to_excel(writer,sheet_name)
 
 nagpur=droughtlabelassignment(droughtdeclarations[0],rfnagpur)
 pune=droughtlabelassignment(droughtdeclarations[1],rfpune)
